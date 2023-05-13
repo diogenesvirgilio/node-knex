@@ -1,9 +1,9 @@
 import { knex as setupKnex, Knex } from 'knex'
 import { env } from './env'
 
-if (!process.env.DATABASE_URL) {
-  throw new Error('')
-}
+// if (!process.env.DATABASE_URL) {
+//  throw new Error('')
+// }
 
 export const config: Knex.Config = {
   client: env.DATABASE_CLIENT,
