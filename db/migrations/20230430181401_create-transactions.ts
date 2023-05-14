@@ -1,6 +1,4 @@
 import { Knex } from 'knex'
-// import { knex } from '../../src/database'
-// import { table } from 'console'
 
 export async function up(knex: Knex): Promise<void> {
   await knex.schema.createTable('transactions', (table) => {
